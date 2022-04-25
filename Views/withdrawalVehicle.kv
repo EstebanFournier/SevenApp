@@ -1,0 +1,26 @@
+#:kivy 2.1
+Screen:
+    
+    MDCard:
+        size_hint: None, None
+        size: 600, 800
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: 'vertical'
+
+        GridLayout:
+            rows: 2
+            GridLayout:
+                id: GL
+                cols: 2
+                Label:
+                    text: 'Id : '
+                Label:
+                    text: 'VéhiculeId'
+
+            GridLayout:
+                cols: 2
+                Button:
+                    text: 'Ajouter'
